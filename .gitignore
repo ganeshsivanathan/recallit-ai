@@ -1,0 +1,15 @@
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.idea/
+.vscode/
+.flutter-plugins
+.flutter-plugins-dependencies
+.macos/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+Generated.xcconfig
+Pods/
+Podfile.lock
+xcuserdata/
