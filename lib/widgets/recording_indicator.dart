@@ -2,6 +2,7 @@
 
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'remembering_text.dart';
 
 class RecordingIndicator extends StatefulWidget {
   final VoidCallback onStop;
@@ -61,19 +62,12 @@ class _RecordingIndicatorState extends State<RecordingIndicator>
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        AnimatedBuilder(
-          animation: _animationController,
-          builder: (context, child) {
-            return Transform.scale(
-              scale: _animationController.value,
-              child: const Icon(
-                Icons.mic,
-                size: 20,
-                color: Color(0xFF6750A4),
-              ),
-            );
-          },
-        ),
+        Row(
+  mainAxisSize: MainAxisSize.min,
+  children: [
+    RememberingText(),
+  ],
+),
         const SizedBox(height: 12),
         Text(
           _formatDuration(_recordingDuration),
@@ -87,7 +81,7 @@ class _RecordingIndicatorState extends State<RecordingIndicator>
           ),
           onPressed: _stopRecording,
           icon: const Icon(Icons.stop),
-          label: const Text("Stop Recording"),
+          label: const Text("Thats It!"),
         ),
       ],
     );

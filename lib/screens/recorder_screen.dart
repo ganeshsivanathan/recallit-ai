@@ -84,7 +84,7 @@ Widget build(BuildContext context) {
                   ),
                   onPressed: _startRecording,
                   icon: const Icon(Icons.mic),
-                  label: const Text("Start Recording"),
+                  label: const Text("Tell me !!"),
                 ),
           const SizedBox(height: 24),
 
@@ -98,7 +98,7 @@ Widget build(BuildContext context) {
                 );
               },
               icon: const Icon(Icons.share),
-              label: const Text('Share Recording'),
+              label: const Text('Okay remebered!..wanna share ?'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurpleAccent,
                 foregroundColor: Colors.white,
